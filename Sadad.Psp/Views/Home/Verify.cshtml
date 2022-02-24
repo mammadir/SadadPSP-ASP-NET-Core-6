@@ -1,0 +1,20 @@
+﻿@model Sadad.Psp.Controllers.HomeController.VerifyResultData
+
+@{
+    ViewData["Title"] = "Verify Page";
+}
+
+<div class="text-center">
+    <ul class="list-group">
+        <li class="list-group-item"> کد پاسخ: @Model.ResCode </li>
+        <li class="list-group-item"> مبلغ: @Model.Amount </li>
+        <li class="list-group-item"> شماره سفارش: @Model.OrderId </li>
+        <li class="list-group-item"> شماره مرجع: @Model.RetrivalRefNo </li>
+        <li class="list-group-item"> شماره پیگیری: @Model.SystemTraceNo </li>
+        <li class="list-group-item"> توضیحات: @Model.Description </li>
+    </ul>
+    <br />
+    <div class="alert alert-primary" role="alert">
+        @ViewBag.Message
+    </div>
+</div>
